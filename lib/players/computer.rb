@@ -20,7 +20,7 @@ module Players
       end
       selectedSpace = -1
       WIN_COMBINATIONS.each do | selectedCombo |
-        if (selectedCombo[0] == opp && selectedCombo[1] == opp)
+        if (inputBoard.cells[selectedCombo[0]] == opp && inputBoard.cells[selectedCombo[1]] == opp)
           selectedSpace = selectedCombo[2]
           break
         elsif (selectedCombo[1] == opp && selectedCombo[2] == opp)
@@ -45,9 +45,7 @@ module Players
         end
       end
       if (selectedSpace == -1)
-        passing = false
-        i = 1
-        while !(passing)
+        
 
 
     end
