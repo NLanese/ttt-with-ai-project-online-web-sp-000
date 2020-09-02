@@ -96,7 +96,7 @@ class Game
       @board.display
     end
     if (self.won?)
-      return "Congratulations, #{self.winner}"
+      return "Congratulations #{self.winner}!"
     else
       return "Cat's Game!"
     end
