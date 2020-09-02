@@ -35,8 +35,8 @@ module Players
           selectedSpace = selectedCombo[0]
           break
         elsif (selectedCombo[0] == self && selectedCombo[2] == self)
-          selectedSpace = selectedCombo[1
-            break
+          selectedSpace = selectedCombo[1]
+          break
         end
       end
 
