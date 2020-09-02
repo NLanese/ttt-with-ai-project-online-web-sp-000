@@ -46,7 +46,7 @@ class Game
   def won?
     WIN_COMBINATIONS.each do | selectedCombo |
       if (@board.cells[selectedCombo[0]] == @board.cells[selectedCombo[1]] && @board.cells[selectedCombo[1]] == @board.cells[selectedCombo[2]])
-        if (@board.value_at(selectedCombo[0] != " "))
+        if (@board.cells[selectedCombo[0]] != " ")
           return selectedCombo
         end
       end
