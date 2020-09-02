@@ -47,6 +47,7 @@ module Players
           end
         end
       end
+      binding.pry
       if (selectedSpace == -1)
         inputBoard.cells.each do | space |
           if space == " "
