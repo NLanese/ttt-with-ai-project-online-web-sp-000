@@ -73,7 +73,7 @@ class Game
   end
 
   def winner
-    #binding.pry
+    binding.pry
     if (self.won? != false)
       winArray = self.won?
       return @board.value_at(winArray[0])
