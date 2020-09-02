@@ -21,10 +21,13 @@ module Players
       WIN_COMBINATIONS.each do | selectedCombo |
         if (selectedCombo[0] == opp && selectedCombo[1] == opp)
           selectedSpace = selectedCombo[2]
+          break
         elsif (selectedCombo[1] == opp && selectedCombo[2] == opp)
           selectedSpace = selectedCombo[0]
+          break
         elsif (selectedCombo[0] == opp && selectedCombo[2] == opp)
           selectedSpace = selectedCombo[1]
+          break
         end
       end
       WIN_COMBINATIONS.each do | selectedCombo |
