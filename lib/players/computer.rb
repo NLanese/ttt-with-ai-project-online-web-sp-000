@@ -54,6 +54,7 @@ module Players
           end
         end
       end
+      binding.pry
       selectedSpace = (selectedSpace + 1).to_s
       return selectedSpace
     end
