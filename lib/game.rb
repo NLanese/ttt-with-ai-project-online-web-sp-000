@@ -98,7 +98,7 @@ class Game
     if (self.won?)
       puts "Congratulations #{self.winner}!"
     else
-      return "Cat's Game!"
+      puts "Cat's Game!"
     end
   end
 
