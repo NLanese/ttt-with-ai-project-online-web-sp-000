@@ -48,8 +48,9 @@ module Players
           end
         end
       end
-      binding.pry
+      #binding.pry
       if (selectedSpace == -1)
+        i = 0
         inputBoard.cells.each do | space |
           if space == " "
             selectedSpace = space
