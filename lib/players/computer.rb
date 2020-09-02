@@ -27,8 +27,8 @@ module Players
           selectedSpace = selectedCombo[1]
         end
       end
-      
-          
+
+
     end
 
   end
