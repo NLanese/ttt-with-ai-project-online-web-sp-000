@@ -19,8 +19,16 @@ module Players
         opp = "X"
       end
       WIN_COMBINATIONS.each do | selectedCombo |
-        if (selectedCombo[0] == opp || selectedCombo[1] == opp)
-          return selectedCombo[2]
+        if (selectedCombo[0] == opp && selectedCombo[1] == opp)
+          selectedSpace = selectedCombo[2]
+        elsif (selectedCombo[1] == opp && selectedCombo[2] == opp)
+          selectedSpace = selectedCombo[0]
+        elsif (selectedCombo[0] == opp && selectedCombo[2] == opp)
+          selectedSpace = selectedCombo[1]
+        end
+      end
+      
+          
     end
 
   end
