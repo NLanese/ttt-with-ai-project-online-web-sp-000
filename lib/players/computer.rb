@@ -48,7 +48,7 @@ module Players
         passing = false
         i = 1
         while !(passing)
-          
+
 
     end
 
