@@ -23,7 +23,7 @@ module Players
         if (inputBoard.cells[selectedCombo[0]] == opp && inputBoard.cells[selectedCombo[1]] == opp)
           selectedSpace = selectedCombo[2]
           break
-        elsif (selectedCombo[1] == opp && selectedCombo[2] == opp)
+        elsif (inputBoard[selectedCombo[1]] == opp && inputBoard[selectedCombo[2]] == opp)
           selectedSpace = selectedCombo[0]
           break
         elsif (selectedCombo[0] == opp && selectedCombo[2] == opp)
