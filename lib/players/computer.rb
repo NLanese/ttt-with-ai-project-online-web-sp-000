@@ -18,6 +18,7 @@ module Players
       else
         opp = "X"
       end
+      selectedSpace = 0
       WIN_COMBINATIONS.each do | selectedCombo |
         if (selectedCombo[0] == opp && selectedCombo[1] == opp)
           selectedSpace = selectedCombo[2]
@@ -30,6 +31,7 @@ module Players
           break
         end
       end
+      if ()
       WIN_COMBINATIONS.each do | selectedCombo |
         if (selectedCombo[0] == self && selectedCombo[1] == self)
           selectedSpace = selectedCombo[2]
