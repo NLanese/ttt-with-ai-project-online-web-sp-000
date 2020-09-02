@@ -53,7 +53,6 @@ module Players
         end
       end
       selectedSpace = (selectedSpace + 1).to_s
-      selectedSpace = selectedSpace.to_s
       return selectedSpace
     end
 
