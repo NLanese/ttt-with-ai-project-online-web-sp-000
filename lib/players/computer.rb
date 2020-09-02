@@ -30,10 +30,13 @@ module Players
       WIN_COMBINATIONS.each do | selectedCombo |
         if (selectedCombo[0] == self && selectedCombo[1] == self)
           selectedSpace = selectedCombo[2]
+          break
         elsif (selectedCombo[1] == self && selectedCombo[2] == self)
           selectedSpace = selectedCombo[0]
+          break
         elsif (selectedCombo[0] == self && selectedCombo[2] == self)
-          selectedSpace = selectedCombo[1]
+          selectedSpace = selectedCombo[1
+            break
         end
       end
 
