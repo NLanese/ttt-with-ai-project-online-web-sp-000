@@ -78,7 +78,7 @@ class Game
   #  binding.pry
     if (self.won? != false)
       winArray = self.won?
-      return @board.value_at(winArray[0])
+      return @board.cells[winArray[0]]
     else
       return
     end
