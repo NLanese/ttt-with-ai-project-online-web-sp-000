@@ -33,6 +33,7 @@ module Players
           break
         end
       end
+      binding.pry
       if (selectedSpace == -1)
         WIN_COMBINATIONS.each do | selectedCombo |
           if (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[1]] == self)
@@ -47,7 +48,7 @@ module Players
           end
         end
       end
-      binding.pry
+      #binding.pry
       if (selectedSpace == -1)
         inputBoard.cells.each do | space |
           if space == " "
@@ -56,7 +57,7 @@ module Players
           end
         end
       end
-      binding.pry
+      #binding.pry
       selectedSpace = (selectedSpace + 1).to_s
       return selectedSpace
     end
