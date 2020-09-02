@@ -35,15 +35,16 @@ module Players
       end
       if (selectedSpace == -1)
         WIN_COMBINATIONS.each do | selectedCombo |
-        if (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[1]] == self)
-          selectedSpace = selectedCombo[2]
-          break
-        elsif (inputBoard.cells[selectedCombo[1]] == self && inputBoard.cells[selectedCombo[2]] == self)
-          selectedSpace = selectedCombo[0]
-          break
-        elsif (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[2]] == self)
-          selectedSpace = selectedCombo[1]
-          break
+          if (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[1]] == self)
+            selectedSpace = selectedCombo[2]
+            break
+          elsif (inputBoard.cells[selectedCombo[1]] == self && inputBoard.cells[selectedCombo[2]] == self)
+            selectedSpace = selectedCombo[0]
+            break
+          elsif (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[2]] == self)
+            selectedSpace = selectedCombo[1]
+            break
+          end
         end
       end
       if (selectedSpace == -1)
