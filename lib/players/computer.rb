@@ -45,7 +45,7 @@ module Players
         end
       end
       if (selectedSpace == -1)
-        
+
 
 
     end
