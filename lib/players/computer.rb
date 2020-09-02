@@ -45,7 +45,10 @@ module Players
         end
       end
       if (selectedSpace == -1)
-        while
+        passing = false
+        i = 1
+        while !(passing)
+          
 
     end
 
