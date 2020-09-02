@@ -39,7 +39,7 @@ module Players
         elsif (inputBoard.cells[selectedCombo[1]] == self && inputBoard.cells[selectedCombo[2]] == self)
           selectedSpace = selectedCombo[0]
           break
-        elsif (selectedCombo[0] == self && selectedCombo[2] == self)
+        elsif (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[2]] == self)
           selectedSpace = selectedCombo[1]
           break
         end
