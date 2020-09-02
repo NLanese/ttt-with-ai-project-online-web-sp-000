@@ -53,7 +53,7 @@ module Players
         i = 0
         inputBoard.cells.each do | space |
           if space == " "
-            selectedSpace = space
+            selectedSpace = i
             break
           end
         end
