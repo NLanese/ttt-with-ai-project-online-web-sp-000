@@ -45,8 +45,10 @@ class Game
 
   def won?
     WIN_COMBINATIONS.each do | selectedCombo |
-      if (@board.value_at(selectedCombo[0]) == @board.value_at(selectedCombo[1]) && @board.value_at(selectedCombo[1]) == @board.value_at(selectedCombo[2]) && @board.value_at(selectedCombo[0] != " "))
-        return selectedCombo
+      if (@board.value_at(selectedCombo[0]) == @board.value_at(selectedCombo[1]) && @board.value_at(selectedCombo[1]) == @board.value_at(selectedCombo[2]))
+        if (@board.value_at(selectedCombo[0] != " "))
+          return selectedCombo
+        end
       end
     end
     return false
