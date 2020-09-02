@@ -31,7 +31,7 @@ module Players
           break
         end
       end
-      if ()
+      if (selectedSpace == -1)
       WIN_COMBINATIONS.each do | selectedCombo |
         if (selectedCombo[0] == self && selectedCombo[1] == self)
           selectedSpace = selectedCombo[2]
