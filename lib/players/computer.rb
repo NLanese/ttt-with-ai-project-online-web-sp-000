@@ -45,6 +45,11 @@ module Players
         end
       end
       if (selectedSpace == -1)
+        inputBoard.cells.each do | space |
+          if space == " "
+            selectedSpace = space
+            break
+          end
 
 
 
