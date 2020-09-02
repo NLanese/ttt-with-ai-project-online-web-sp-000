@@ -50,6 +50,12 @@ module Players
             selectedSpace = space
             break
           end
+        end
+      end
+      selectedSpace = selectedSpace + 1
+      selectedSpace = selectedSpace.to_s
+      return selectedSpace
+    end
 
 
 
