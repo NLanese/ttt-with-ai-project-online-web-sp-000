@@ -33,7 +33,7 @@ module Players
       end
       if (selectedSpace == -1)
         WIN_COMBINATIONS.each do | selectedCombo |
-        if (selectedCombo[0] == self && selectedCombo[1] == self)
+        if (inputBoard.cells[selectedCombo[0]] == self && inputBoard.cells[selectedCombo[1]] == self)
           selectedSpace = selectedCombo[2]
           break
         elsif (selectedCombo[1] == self && selectedCombo[2] == self)
