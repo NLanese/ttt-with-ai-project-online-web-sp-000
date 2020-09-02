@@ -27,7 +27,15 @@ module Players
           selectedSpace = selectedCombo[1]
         end
       end
-
+      WIN_COMBINATIONS.each do | selectedCombo |
+        if (selectedCombo[0] == self && selectedCombo[1] == self)
+          selectedSpace = selectedCombo[2]
+        elsif (selectedCombo[1] == self && selectedCombo[2] == self)
+          selectedSpace = selectedCombo[0]
+        elsif (selectedCombo[0] == self && selectedCombo[2] == self)
+          selectedSpace = selectedCombo[1]
+        end
+      end
 
     end
 
